@@ -1,22 +1,227 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>☄️𝗧𝗜𝗣𝗣𝗜𝗡𝗚 𝗧𝗢𝗦𝗦 𝗟𝗢𝗔𝗗☄️ - Premium Cricket Tips</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<title>Abhishek Tips | Cricket Analysis</title>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1780949959943830');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1780949959943830&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-body{min-height:100vh;background:#020617;color:white;display:flex;justify-content:center;align-items:center;}
-.logo{width:150px;height:150px;border-radius:50%;border:4px solid gold;box-shadow:0 0 20px gold;}
+:root{
+  --bg:#060606;
+  --card:#120802;
+  --orange:#ff8a1f;
+  --orange2:#ffb347;
+  --text:#fff;
+  --muted:#ffd7b5;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at top,#1a0c03,#050505 60%);
+  color:var(--text);
+}
+
+.container{
+  max-width:520px;
+  margin:auto;
+  padding:24px 16px;
+  text-align:center;
+}
+
+/* 🔥 Avatar Glow */
+.avatar-wrap{
+  width:160px;
+  height:160px;
+  margin:20px auto;
+  border-radius:50%;
+  background:conic-gradient(var(--orange),var(--orange2),var(--orange));
+  padding:6px;
+  box-shadow:0 0 40px rgba(255,138,31,.8);
+}
+.avatar{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  overflow:hidden;
+  background:#000;
+}
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+h1{
+  margin:10px 0 6px;
+  font-size:34px;
+  font-weight:800;
+}
+.sub{
+  color:var(--muted);
+  font-weight:600;
+  font-size:15px;
+}
+
+/* Pills */
+.pills{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:18px 0;
+}
+.pill{
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:700;
+  font-size:14px;
+  background:rgba(255,138,31,.15);
+  border:1px solid var(--orange);
+  box-shadow:0 0 15px rgba(255,138,31,.4);
+}
+
+/* Stats */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:20px 0;
+}
+.stat{
+  background:var(--card);
+  border-radius:14px;
+  padding:14px 8px;
+  box-shadow:0 0 20px rgba(255,138,31,.15);
+}
+.stat .big{
+  font-size:22px;
+  font-weight:800;
+  color:var(--orange);
+}
+.stat .label{
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* CTA Button */
+.join{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin:22px 0;
+  padding:16px;
+  border-radius:40px;
+  font-size:20px;
+  font-weight:800;
+  text-decoration:none;
+  color:#120802;
+  background:linear-gradient(90deg,var(--orange),var(--orange2));
+  box-shadow:0 0 35px rgba(255,138,31,.9);
+}
+.join small{
+  display:block;
+  font-size:12px;
+  color:#3a1a00;
+}
+
+/* Feature Cards */
+.feature{
+  background:var(--card);
+  border-radius:18px;
+  padding:16px;
+  margin:14px 0;
+  text-align:left;
+  box-shadow:0 0 20px rgba(255,138,31,.15);
+}
+.feature h3{
+  margin:0 0 6px;
+  font-size:16px;
+}
+.feature p{
+  margin:0;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.footer{
+  margin-top:26px;
+  font-size:13px;
+  color:#facc15;
+}
 </style>
 </head>
+
 <body>
-<div style="text-align:center;">
-<img src="logo.jpg" class="logo"><br><br>
-<h1>☄️𝗧𝗜𝗣𝗣𝗜𝗡𝗚 𝗧𝗢𝗦𝗦 𝗟𝗢𝗔𝗗☄️</h1>
-<a href="https://t.me/+H2J8cLAqpbgxN2I1">JOIN TELEGRAM</a>
+<div class="container">
+
+  <!-- Avatar -->
+  <div class="avatar-wrap">
+    <div class="avatar">
+      <!-- YAHAN IMAGE / LOGO PATH CHANGE KARO -->
+      <img src="Aditya rao.jpeg" alt="Aditya Rao">
+    </div>
+  </div>
+
+  <h1>Abhishek Tips (2021)</h1>
+  <div class="sub">👥 70k+ Active Members (Verified)</div>
+
+  <div class="pills">
+    <div class="pill">🏆 Premium Analyst</div>
+    <div class="pill">🚀 Live Updates</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="big">98K+</div>
+      <div class="label">Match Analysis</div>
+    </div>
+    <div class="stat">
+      <div class="big">Expert</div>
+      <div class="label">Insights</div>
+    </div>
+    <div class="stat">
+      <div class="big">4.9★</div>
+      <div class="label">User Rating</div>
+    </div>
+  </div>
+
+  <a class="join" href="https://t.me/+G5-Zgp7n44Q4MjE9" target="_blank">
+    📩 Join Telegram Channel
+  </a>
+
+  <div class="feature">
+    <h3>✅ Pre-Match Cricket Analysis</h3>
+    <p>Smart & research-based insights before every match.</p>
+  </div>
+
+  <div class="feature">
+    <h3>🔥 Transparent & Trusted</h3>
+    <p>Community-driven cricket analysis with live updates.</p>
+  </div>
+
+  <div class="footer">© 2026 Abhishek Tips (2021) • Cricket Analysis Platform</div>
+
 </div>
 </body>
 </html>
